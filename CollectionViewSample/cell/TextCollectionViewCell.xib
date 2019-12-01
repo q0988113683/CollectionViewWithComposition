@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextCellIdentifier" id="gTV-IL-0wX" customClass="TextCollectionViewCell" customModule="CollectionViewSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="94"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQn-dr-g6E">
+                        <rect key="frame" x="0.0" y="44" width="116" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoq-k2-i0q">
+                                <rect key="frame" x="0.0" y="0.0" width="116" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hoq-k2-i0q" firstAttribute="height" secondItem="ZQn-dr-g6E" secondAttribute="height" id="D4b-Ma-enf"/>
+                            <constraint firstItem="hoq-k2-i0q" firstAttribute="centerX" secondItem="ZQn-dr-g6E" secondAttribute="centerX" id="aU8-XG-dxN"/>
+                            <constraint firstItem="hoq-k2-i0q" firstAttribute="width" secondItem="ZQn-dr-g6E" secondAttribute="width" id="asv-c0-uQN"/>
+                            <constraint firstItem="hoq-k2-i0q" firstAttribute="centerY" secondItem="ZQn-dr-g6E" secondAttribute="centerY" id="pxA-ed-2NQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="ZQn-dr-g6E" secondAttribute="trailing" id="7wh-hp-axo"/>
+                <constraint firstItem="ZQn-dr-g6E" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="Ccs-am-2dX"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="ZQn-dr-g6E" secondAttribute="top" id="KCG-IA-ZAM"/>
+                <constraint firstItem="ZQn-dr-g6E" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="RYg-qK-taX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="116" height="94"/>
+            <connections>
+                <outlet property="labText" destination="hoq-k2-i0q" id="aWp-ph-9N9"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="156.69642857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
